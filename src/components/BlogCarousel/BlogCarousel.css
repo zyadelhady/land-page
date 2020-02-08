@@ -1,0 +1,26 @@
+.BlackDots {
+  list-style: none;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.BlackDots li:not(:last-child) {
+  margin-right: 2rem;
+}
+.BlackDots li button {
+  outline: none;
+  cursor: pointer;
+  background-color: #919191;
+  border: none;
+  color: transparent;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  transform: scale(0.8);
+  transition: all 0.3s;
+}
+
+.BlackDots li.slick-active button {
+  background-color: #333;
+  transform: scale(1);
+}

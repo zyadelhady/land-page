@@ -1,0 +1,66 @@
+.Carousel {
+  text-align: center;
+  padding: 2rem;
+  /* outline: none !important; */
+}
+.Carousel:focus {
+  outline: none !important;
+}
+.Carousel p {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  line-height: 1.45;
+  font-style: italic;
+  letter-spacing: 0.004em;
+  /* margin-bottom: 2.5rem; */
+}
+
+.Carousel span {
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.Carousel p:before {
+  content: open-quote;
+}
+.Carousel p:after {
+  content: close-quote;
+}
+
+.Dots {
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.Dots li:not(:last-child) {
+  margin-right: 2rem;
+}
+.Dots li button {
+  outline: none;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  color: transparent;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  transform: scale(0.7);
+  transition: all 0.3s;
+}
+
+.Dots li.slick-active button {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+.slick-list {
+  margin-bottom: 8rem !important;
+  cursor: grabbing;
+}
+
+.slick-track {
+  /* transform: translate3d(-50000px, 0px, 0px) !important; */
+}

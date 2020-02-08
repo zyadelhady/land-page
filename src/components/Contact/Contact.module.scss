@@ -1,0 +1,125 @@
+.Background {
+  background-color: #f8f8f8;
+  padding: 6rem 0;
+  button {
+    transition: all 1s;
+    text-decoration: none;
+    padding: 1.7rem 4rem;
+    list-style: none;
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: #252525;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+}
+
+.Contact {
+  display: flex;
+  padding: 0 4rem;
+
+  &_Details {
+    padding-right: 4rem;
+    width: 50%;
+
+    h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.6rem;
+    }
+
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &_Desciption {
+      color: #5f5f5f;
+      font-family: 'Work Sans', sans-serif;
+    }
+  }
+  &_Form {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    & > :last-child {
+      align-self: flex-start;
+    }
+    &_TwoCol {
+      display: flex;
+      width: 100%;
+      & > :first-child {
+        margin-right: 4rem;
+      }
+    }
+  }
+}
+
+.slideInLeft {
+  -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slideInRight {
+  -webkit-animation: slide-in-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

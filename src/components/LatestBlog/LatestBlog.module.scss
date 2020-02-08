@@ -1,0 +1,65 @@
+.LatestBlog {
+  background-color: #fafafa !important;
+  min-height: 70vh;
+  margin-top: 5rem;
+}
+
+.TheLatestBlog {
+  padding: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+    h3 {
+      font-family: 'Playfair Display', serif;
+      color: #000;
+      font-size: 3rem;
+    }
+    p {
+      font-family: 'Work Sans', sans-serif;
+      color: #5f5f5f;
+      width: 75%;
+    }
+  }
+
+  &Cards {
+    width: 120%;
+    margin-top: 4rem;
+  }
+}
+.slideInTop {
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
