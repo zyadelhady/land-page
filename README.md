@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Go to tthe [Demo](https://land-page.now.sh/).
 
 ## Available Scripts
 
